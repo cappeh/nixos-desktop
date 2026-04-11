@@ -14,7 +14,9 @@
     };
 
     shellAliases = {
-      reload = "sudo nixos-rebuild-switch --flake";
+      reload = "sudo nixos-rebuild-switch --flake /home/cappie/nixos/";
+      clean = "sudo nix-collect-garbage -d";
+      optimize = "sudo nix-store --optimize";
     };
 
     histSize = 10000;

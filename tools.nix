@@ -13,5 +13,14 @@
     brave
     postman
     libreoffice
+
+    psmisc
+
+    dig
+
+    # File Tools
+    zip
+    unzip
+    p7zip
   ];
 }
