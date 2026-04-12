@@ -11,6 +11,7 @@
         ./configuration.nix
         ./bluetooth.nix
         ./lsp.nix
+        ./gtk.nix
         ./fonts.nix
         ./hyprland.nix
         ./programming-languages.nix
