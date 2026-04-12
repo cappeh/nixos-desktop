@@ -14,9 +14,12 @@
     };
 
     shellAliases = {
-      reload = "sudo nixos-rebuild-switch --flake /home/cappie/nixos/";
+      reload = "sudo nixos-rebuild switch --impure --flake /home/cappie/nixos/";
       clean = "sudo nix-collect-garbage -d";
       optimize = "sudo nix-store --optimize";
+      cat = "bat";
+      lsa = "eza -@alhbgum --icons=always";
+      ls = "eza -@lhbgum --icons=always";
     };
 
     histSize = 10000;
