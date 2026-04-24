@@ -1,33 +1,38 @@
 { pkgs, ... }:
 
 {
-  programs.thunar.enable = true;
-  programs.thunar.plugins = with pkgs; [
-    thunar-archive-plugin
-      thunar-volman
-  ];
-
-  programs.wireshark = {
+  programs.thunar = {
     enable = true;
+    plugins = with pkgs; [
+      thunar-archive-plugin
+      thunar-volman
+    ];
   };
 
+  programs.wireshark.enable = true;
+
   environment.systemPackages = with pkgs; [
-    gnumake
-    gcc
+    # Browsers
     firefox
     brave
-    postman
+
+    # Office / productivity
     libreoffice
+    postman
 
-    psmisc
+    # Build tools
+    gnumake
+    gcc
 
+    # Networking
     dig
+    psmisc
+    traceroute
+    wireshark
 
-    # File Tools
+    # File tools
     zip
     unzip
     p7zip
-
-    wireshark
   ];
 }
