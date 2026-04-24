@@ -10,11 +10,10 @@
       modules = [
         ./configuration.nix
         ./modules/hardware/bluetooth.nix
-        ./modules/dev/lsp.nix
         ./modules/desktop/gtk.nix
         ./modules/desktop/fonts.nix
         ./modules/desktop/hyprland.nix
-        ./modules/dev/programming-languages.nix
+        ./modules/dev/programming.nix
         ./modules/services/services.nix
         ./modules/dev/terminal.nix
         ./modules/dev/tools.nix
