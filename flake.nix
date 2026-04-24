@@ -9,15 +9,15 @@
     nixosConfigurations.cappie-nixos = nixpkgs.lib.nixosSystem {
       modules = [
         ./configuration.nix
-        ./bluetooth.nix
-        ./lsp.nix
-        ./gtk.nix
-        ./fonts.nix
-        ./hyprland.nix
-        ./programming-languages.nix
-        ./services.nix
-        ./terminal.nix
-        ./tools.nix
+        ./modules/hardware/bluetooth.nix
+        ./modules/dev/lsp.nix
+        ./modules/desktop/gtk.nix
+        ./modules/desktop/fonts.nix
+        ./modules/desktop/hyprland.nix
+        ./modules/dev/programming-languages.nix
+        ./modules/services/services.nix
+        ./modules/dev/terminal.nix
+        ./modules/dev/tools.nix
       ];
     };
   };
