@@ -59,7 +59,7 @@
   users.users.cappie = {
     isNormalUser = true;
     description = "cappie";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "wireshark" ];
     packages = with pkgs; [];
   };
 

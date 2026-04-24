@@ -7,6 +7,10 @@
       thunar-volman
   ];
 
+  programs.wireshark = {
+    enable = true;
+  };
+
   environment.systemPackages = with pkgs; [
     gnumake
     gcc
@@ -23,5 +27,7 @@
     zip
     unzip
     p7zip
+
+    wireshark
   ];
 }
