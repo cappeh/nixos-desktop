@@ -28,7 +28,7 @@
     dig
     psmisc
     traceroute
-    wireshark
+    # wireshark
 
     # File tools
     zip
